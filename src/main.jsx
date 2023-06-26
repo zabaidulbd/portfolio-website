@@ -8,6 +8,7 @@ import {
 import Main from './layout/Main';
 import Home from './pages/Home/Home/Home';
 import About from './pages/About/About';
+import Project from './pages/Project/Project';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About></About>
+      },
+      {
+        path: 'project',
+        element: <Project></Project>
       }
     ]
   },
