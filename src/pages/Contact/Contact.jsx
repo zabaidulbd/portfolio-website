@@ -1,24 +1,54 @@
+import { useRef, useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
+    const emailRef = useRef();
+    const nameRef = useRef();
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => emailjs.init("kW7JxiPAQxZ34v9S9"), []);
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const serviceId = "service_7m2b89i";
+        const templateId = "template_50o13wa";
+        try {
+            setLoading(true);
+            await emailjs.send(serviceId, templateId, {
+                name: nameRef.current.value,
+                recipient: emailRef.current.value
+            });
+            alert("email successfully sent check inbox");
+        } catch (error) {
+            console.log(error);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+
+
+
     return (
         <div className="mt-5">
             <h1 className="text-5xl text-center font-bold mb-5">Contact</h1>
-            <div className="form-control w-full max-w-lg mx-auto">
+            <form className="form-control w-full max-w-lg mx-auto" onSubmit={handleSubmit}>
                 <label className="label">
                     <span className="text-xl font-semibold">Your Name</span>
                 </label>
-                <input type="text" placeholder="Your name" className="input input-bordered border-8 w-full max-w-lg my-3" />
+                <input type="text" ref={nameRef} placeholder="Your name" className="input input-bordered border-8 w-full max-w-lg my-3" />
                 <label className="label">
                     <span className="text-xl font-semibold">Your Email</span>
                 </label>
-                <input type="email" placeholder="Your email" className="input input-bordered border-8 w-full max-w-lg my-3" />
+                <input type="email" ref={emailRef} placeholder="Your email" className="input input-bordered border-8 w-full max-w-lg my-3" />
                 <label className="label">
                     <span className="text-xl font-semibold">Your Message</span>
                 </label>
                 <textarea className="textarea textarea-primary my-3" placeholder="Your message"></textarea>
-                <button className="btn btn-active btn-neutral mb-5">send</button>
-            </div>
+                <input disabled={loading} className="btn btn-active btn-neutral mb-5" type="submit" value="send" />
+            </form>
         </div>
     );
 };
