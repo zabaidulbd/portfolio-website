@@ -2,16 +2,31 @@ import img1 from '../../assets/Images/Projects/projects-1.png'
 import img2 from '../../assets/Images/Projects/projects-2.png'
 import img3 from '../../assets/Images/Projects/projects-10.png'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Project = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
+
+
+
+
     return (
         <div>
             <div>
                 <h1 className='text-center text-5xl mt-12'>Case Studies</h1>
                 <p className='font-semibold text-center mt-5 ms-24 me-24'>As a MERN developer, my portfolio showcases a collection of projects that highlight my expertise in creating dynamic web applications. With skills in HTML, CSS, JavaScript, and the MERN stack, I have built responsive interfaces, integrated APIs, and implemented user authentication systems. I prioritize clean code practices, attention to detail, and timely project delivery, aiming to create impactful web solutions that exceed expectations.</p>
             </div>
-            <div className="flex gap-5 my-24 ms-10 me-10">
+            <div data-aos="fade-up" className="flex gap-5 my-24 ms-10 me-10">
                 <div>
                     <div className="card w-100 bg-base-100 shadow-xl">
                         <figure><img className='w-100 h-100' src={img1} alt="Shoes" /></figure>
