@@ -1,6 +1,5 @@
 import Banner from "../Banner/Banner";
 import Experience from "../Experience/Experience";
-import Skill from "../Skill/Skill";
 
 
 const Home = () => {
@@ -8,7 +7,6 @@ const Home = () => {
         <>
             <Banner></Banner>
             <Experience></Experience>
-            <Skill></Skill>
         </>
     );
 };

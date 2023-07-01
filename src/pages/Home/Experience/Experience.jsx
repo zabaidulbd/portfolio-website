@@ -24,80 +24,86 @@ const Experience = () => {
         AOS.refresh(); // Refresh AOS when the component mounts or updates
     }, []);
 
-    // data-aos="fade-up"
-
 
 
 
     return (
-        <div className='mt-20'>
+        <div className='mt-20 mb-10'>
             <div>
                 <h1 className='text-5xl text-center font-bold'>Experience</h1>
                 <p className='font-semibold mt-7 mb-10 ms-28 me-36'>I have a good understanding of HTML, CSS, and JavaScript, which are the building blocks of websites. I can create attractive and user-friendly web designs using these languages. With my knowledge of React, I can make websites more interactive and engaging for users. I am also skilled in using MongoDB, Node.js, and Express to manage data and handle the server-side of web applications. With my combined skills, I can develop complete web applications from start to finish efficiently and effectively.</p>
             </div>
             <div data-aos="fade-up" className='grid grid-cols-4 gap-8 ms-12'>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img1} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center my-3">
-                        <div className="radial-progress" style={{ "--value": 80, "--size": "4rem" }}>80%</div>
+                    <div data-aos="fade-down" className="items-center text-center my-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={80} max="100"></progress>
+                        <span style={{ "--value": 80, "--size": "3rem" }}>80%</span>
                     </div>
                 </div>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img2} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center mt-3">
-                        <div className="radial-progress" style={{ "--value": 80, "--size": "4rem" }}>80%</div>
+                    <div data-aos="fade-down" className="items-center text-center mt-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={80} max="100"></progress>
+                        <span style={{ "--value": 80, "--size": "3rem" }}>80%</span>
                     </div>
                 </div>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img3} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center mt-3">
-                        <div className="radial-progress" style={{ "--value": 70, "--size": "4rem" }}>70%</div>
+                    <div data-aos="fade-down" className="items-center text-center mt-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={80} max="100"></progress>
+                        <span style={{ "--value": 70, "--size": "3rem" }}>70%</span>
                     </div>
                 </div>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img4} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center mt-3">
-                        <div className="radial-progress" style={{ "--value": 70, "--size": "4rem" }}>70%</div>
+                    <div data-aos="fade-down" className="items-center text-center mt-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={80} max="100"></progress>
+                        <span style={{ "--value": 70, "--size": "3rem" }}>70%</span>
                     </div>
                 </div>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img5} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center my-3">
-                        <div className="radial-progress" style={{ "--value": 40, "--size": "4rem" }}>40%</div>
+                    <div data-aos="fade-down" className="items-center text-center my-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={40} max="100"></progress>
+                        <span style={{ "--value": 40, "--size": "3rem" }}>40%</span>
                     </div>
                 </div>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img6} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center mt-3">
-                        <div className="radial-progress" style={{ "--value": 40, "--size": "4rem" }}>40%</div>
+                    <div data-aos="fade-down" className="items-center text-center mt-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={40} max="100"></progress>
+                        <span style={{ "--value": 40, "--size": "3rem" }}>40%</span>
                     </div>
                 </div>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img7} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center mt-3">
-                        <div className="radial-progress" style={{ "--value": 70, "--size": "4rem" }}>70%</div>
+                    <div data-aos="fade-down" className="items-center text-center mt-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={70} max="100"></progress>
+                        <span style={{ "--value": 70, "--size": "3rem" }}>70%</span>
                     </div>
                 </div>
                 <div className="card w-72 bg-base-100 shadow-xl">
-                    <figure className="px-7 pt-7">
+                    <figure className="px-7 pt-9">
                         <img src={img8} alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="items-center text-center mt-3">
-                        <div className="radial-progress" style={{ "--value": 40, "--size": "4rem" }}>40%</div>
+                    <div data-aos="fade-down" className="items-center text-center mt-3">
+                        <progress className="progress progress-secondary w-44 me-5" value={40} max="100"></progress>
+                        <span style={{ "--value": 40, "--size": "3rem" }}>40%</span>
                     </div>
                 </div>
             </div>
