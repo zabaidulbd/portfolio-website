@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Project = () => {
     return (
-        <div className="flex gap-5 my-20 ms-10 me-10">
+        <div className="flex gap-5 my-24 ms-10 me-10">
             <div>
                 <div className="card w-100 bg-base-100 shadow-xl">
                     <figure><img className='w-100 h-100' src={img1} alt="Shoes" /></figure>
