@@ -1,4 +1,4 @@
-import { FaLinkedin, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin, FaFacebookSquare, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -12,10 +12,12 @@ const Footer = () => {
                 </div>
                 <div>
                     <div className="ms-10 py-10">
-                        <h2 className="font-bold ms-8 mb-2 text-3xl text-[#35495E]">Follow Me</h2>
+                        <h2 className="font-bold ms-9 mb-2 text-3xl text-[#35495E]">Follow Me</h2>
                         <div className="flex ms-10">
-                            <Link to='https://www.linkedin.com/in/zabaidul-islam-8725b915a/'><span className="text-3xl text-[#35495E]"><FaLinkedin></FaLinkedin></span></Link>
-                            <span className="text-3xl mx-2 text-[#35495E]"><FaFacebookSquare></FaFacebookSquare></span>
+                            <Link to='https://www.linkedin.com/in/zabaidul-islam-8725b915a/'><span className="text-3xl
+                             text-[#35495E]"><FaLinkedin></FaLinkedin></span></Link>
+                            <span className="px-2"><Link to='https://github.com/zabaidulbd'><span className="text-3xl text-[#35495E]"><FaGithubSquare></FaGithubSquare></span></Link></span>
+                            <span className="text-3xl pe-2 text-[#35495E]"><FaFacebookSquare></FaFacebookSquare></span>
                             <span className="text-3xl text-[#35495E]"><FaTwitterSquare></FaTwitterSquare></span>
                         </div>
                         <p className="mt-5">Copyright © 2023 - All right reserved</p>
