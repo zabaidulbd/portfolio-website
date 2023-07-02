@@ -7,8 +7,8 @@ const Footer = () => {
             <footer className="footer px-10 py-4 border-t bg-[#FFE4B5] text-base-content border-base-300">
                 <div className="ms-10 py-10">
                     <h2 className="font-bold text-3xl text-[#35495E]">Contact Me</h2>
-                    <p className="text-xl text-[#35495E]">Phone: +8801993881464</p>
-                    <p className="text-xl text-[#35495E]">email: zislam5622@gmail.com</p>
+                    <p className="font-semibold text-[#35495E]">Phone: +8801993881464</p>
+                    <p className="font-semibold text-[#35495E]">email: zislam5622@gmail.com</p>
                 </div>
                 <div>
                     <div className="ms-10 py-10">

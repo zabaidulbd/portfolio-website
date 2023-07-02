@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-[#FFE4B5] p-7">
+        <div className="navbar bg-[#fbe8c7] p-7">
             <div className="navbar-start">
                 <a className="btn btn-ghost normal-case text-3xl ms-28">Zabaidul.</a>
             </div>
