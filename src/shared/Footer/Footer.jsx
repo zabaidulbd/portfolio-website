@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <div className="ms-10 py-10">
-                        <h2 className="font-bold ms-9 mb-2 text-3xl text-[#35495E]">Follow Me</h2>
+                        <h2 className="font-bold ms-9 mb-2 text-3xl text-[#35495E]">Social Profiles</h2>
                         <div className="flex ms-10">
                             <Link to='https://www.linkedin.com/in/zabaidul-islam-8725b915a/'><span className="text-3xl
                              text-[#35495E]"><FaLinkedin></FaLinkedin></span></Link>
