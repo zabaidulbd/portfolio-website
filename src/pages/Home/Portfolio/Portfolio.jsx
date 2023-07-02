@@ -10,7 +10,7 @@ const Portfolio = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 3000,
+            duration: 2000,
             once: true,
         });
         AOS.refresh(); // Refresh AOS when the component mounts or updates
@@ -20,7 +20,7 @@ const Portfolio = () => {
         <>
             <div>
                 <h1 className='text-center font-bold text-5xl mt-12'>Portfolio</h1>
-                <p className='font-semibold text-center mt-5 ms-24 me-24'>As a MERN developer, my portfolio showcases a collection of projects that highlight my expertise in creating dynamic web applications. With skills in HTML, CSS, JavaScript, and the MERN stack, I have built responsive interfaces, integrated APIs, and implemented user authentication systems. I prioritize clean code practices, attention to detail, and timely project delivery, aiming to create impactful web solutions that exceed expectations.</p>
+                <p className='font-semibold text-center mt-5 ms-40 me-36'>As a MERN developer, my portfolio showcases a collection of projects that highlight my expertise in creating dynamic web applications. With skills in HTML, CSS, JavaScript, and the MERN stack, I have built responsive interfaces, integrated APIs, and implemented user authentication systems. I prioritize clean code practices, attention to detail, and timely project delivery, aiming to create impactful web solutions that exceed expectations.</p>
             </div>
             <div className="flex gap-5 my-24 ms-10 me-10">
                 <div>

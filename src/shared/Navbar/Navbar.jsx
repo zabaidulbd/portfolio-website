@@ -15,7 +15,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to='contact'><button className="border-2 px-7 py-2 bg-[#35495E] text-white me-28">Contact</button></Link>
+                <Link to='contact'><button className="border-2 px-7 py-2 bg-[#35495E] text-white hover:bg-[#2B3A49] hover:text-[#FFFFFF]  transition-colors duration-300 transform hover:scale-105 me-28">Contact</button></Link>
             </div>
         </div>
     );

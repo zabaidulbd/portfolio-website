@@ -28,7 +28,7 @@ const Experience = () => {
         <div className='mt-5 mb-32'>
             <div>
                 <h1 className='text-5xl text-center font-bold text-[#35495E]'>Technical Skills</h1>
-                <p className='font-semibold mt-7 mb-10 ms-28 me-36 text-[#35495E]'>I have a good understanding of HTML, CSS, and JavaScript, which are the building blocks of websites. I can create attractive and user-friendly web designs using these languages. With my knowledge of React, I can make websites more interactive and engaging for users. I am also skilled in using MongoDB, Node.js, and Express to manage data and handle the server-side of web applications. With my combined skills, I can develop complete web applications from start to finish efficiently and effectively.</p>
+                <p className='font-semibold mt-7 mb-10 ms-40 me-36 text-[#35495E]'>I have a good understanding of HTML, CSS, and JavaScript, which are the building blocks of websites. I can create attractive and user-friendly web designs using these languages. With my knowledge of React, I can make websites more interactive and engaging for users. I am also skilled in using MongoDB, Node.js, and Express to manage data and handle the server-side of web applications. With my combined skills, I can develop complete web applications from start to finish efficiently.</p>
             </div>
             <div className='grid grid-cols-4 gap-8 ms-12'>
                 <div data-aos="fade-up" className="card w-72 bg-base-100 shadow-xl">

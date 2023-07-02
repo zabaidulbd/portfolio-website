@@ -47,7 +47,7 @@ const Contact = () => {
                         <span className="text-xl font-semibold">Your Message</span>
                     </label>
                     <textarea className="textarea textarea-primary my-3" placeholder="Your message" name="message"></textarea>
-                    <input className="btn btn-neutral my-4" type="submit" value="send" />
+                    <input className="btn btn-neutral hover:bg-[#2B3A49] hover:text-[#FFFFFF]  transition-colors duration-300 transform hover:scale-105 my-4" type="submit" value="send" />
                 </form>
             </div>
         </div>
