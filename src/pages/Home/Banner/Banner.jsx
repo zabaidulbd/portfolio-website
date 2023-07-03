@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import bannerImg from '../../../assets/Images/Banner/young-man-wearing-blue-outfit-holding-red-folder.jpg'
+import bannerImg from '../../../assets/Images/Banner/banner.png'
 import resume from '../../../assets/resume/zabaidul-islam-resume.pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -21,7 +21,7 @@ const Banner = () => {
         <>
             <div className="hero min-h-screen">
                 <div data-aos="fade-up" className="hero-content flex-col lg:flex-row-reverse">
-                    <img src={bannerImg} className="max-w-sm rounded-lg shadow-2xl" />
+                    <img src={bannerImg} className="max-w-xl rounded shadow-xl" />
                     <div data-aos="fade-right">
                         <h6 className='text-3xl font-semibold text-[#35495E] mb-2'>This is me</h6>
                         <h1 className="text-5xl font-bold text-[#35495E]">Zabaidul Islam.</h1>
